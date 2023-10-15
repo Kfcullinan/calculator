@@ -44,4 +44,7 @@
     width: 74.8%;
   }
 
-  
+  .calc-button:last-child {
+    background-color: #df974c;
+    color: white;
+  }
