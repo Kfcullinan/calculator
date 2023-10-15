@@ -48,3 +48,7 @@
     background-color: #df974c;
     color: white;
   }
+
+  .calc-button:last-child:hover {
+    background-color: #dfb07e;
+  }
