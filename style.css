@@ -31,3 +31,7 @@
     background-color: #ebebeb;
 
   }
+
+  .calc-button:active {
+    background-color: #bbbcbe;
+  }
