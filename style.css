@@ -26,3 +26,8 @@
     font-size: 40px;
     cursor: pointer;
   }
+
+  .calc-button:hover {
+    background-color: #ebebeb;
+
+  }
