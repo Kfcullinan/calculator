@@ -12,3 +12,11 @@ function buttonClick(value) {
     rerender();
 
 }
+
+function handleNumber(value) {
+    if (buffer === "0") {
+    } else {
+        buffer += value;
+    }
+}
+
