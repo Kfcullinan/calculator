@@ -50,3 +50,35 @@ function flushOperation(intBuffer) {
       runningTotal /= intBuffer;
     }
   }
+
+  function handleSymbol(value) {
+    switch (value) {
+        case "C":
+            buffer ="0";
+            runningTotal = 0;
+            break;
+        case "=":
+            if(previousOperator === null) {
+                return;
+            }
+            flushOperation(parseInt(buffer));
+            previousOperator = null;
+            buffer = +runningTotal;
+            runningTotal = 0;
+            break;
+            case "D":
+                if (buffer.length ===1) {
+                    buffer = "0";
+                    
+                } else {
+                    buffer = buffer.substring(0, buffer.length - 1);
+                }
+                break;
+                case "+":
+                    case "-":
+                    case "×":
+                    case "÷":
+                      handleMath(value);
+                      break;
+    }
+  }
